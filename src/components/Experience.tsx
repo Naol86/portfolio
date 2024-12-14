@@ -1,6 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
-import { ArrowUpFromDot } from "lucide-react";
+import { ArrowDownToDot, MoveRight } from "lucide-react";
 
 interface ExperienceType {
   start: string;
@@ -15,16 +15,18 @@ export default function Experience({
 }: {
   experience: ExperienceType;
 }) {
-  console.log(experience);
   if (!experience) return <></>;
   return (
     <div className="md:flex py-4 gap-1 px-4 rounded-md bg-blue-400 bg-opacity-0 backdrop-blur-md hover:bg-opacity-5 transition-all duration-300">
-      <div className="md:min-w-[130px] flex flex-col items-center gap-2">
-        <p className="text-sm text-gray-400">{experience.end}</p>
-        <p className="text-center text-gray-400">
-          <ArrowUpFromDot />
-        </p>
+      <div className="md:min-w-[130px] flex md:flex-col items-center gap-2">
         <p className="text-sm text-gray-400">{experience.start}</p>
+        <p className="text-center text-gray-400 hidden md:block">
+          <ArrowDownToDot />
+        </p>
+        <p className="text-center text-gray-400 md:hidden">
+          <MoveRight />
+        </p>
+        <p className="text-sm text-gray-400">{experience.end}</p>
       </div>
       <div className="grow">
         <div className="flex justify-between items-baseline mb-4">

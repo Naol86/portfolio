@@ -1,7 +1,9 @@
+import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import InteractiveBackground from "@/components/InteractiveBackground";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,13 +26,13 @@ export const metadata: Metadata = {
   // Open Graph meta tags for social media sharing
   openGraph: {
     type: "website",
-    url: "https://your-portfolio-url.com", // Replace with your portfolio's URL
+    url: "https://naol.me", // Replace with your portfolio's URL
     title: "Naol Kainset - Full Stack Developer",
     description:
       "Explore the portfolio of Naol Kainset, a Full Stack Developer proficient in React, Next.js, Laravel, and PHP.",
     images: [
       {
-        url: "https://your-portfolio-url.com/og-image.jpg", // Replace with your image URL
+        url: "https://naol.me/og-image.jpg", // Replace with your image URL
         width: 1200,
         height: 630,
         alt: "Naol Kainset Portfolio",
@@ -48,6 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="	GTM-5NC79ZB5" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
