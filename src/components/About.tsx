@@ -3,7 +3,7 @@ import Title from "./Title";
 
 export default function About() {
   return (
-    <div id="about">
+    <div id="about" className="my-5">
       <Title title="About" />
       <section className="space-y-2 divide-y-2 divide-white/20 px-2">
         <div className="px-2">

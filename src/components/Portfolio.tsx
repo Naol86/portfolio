@@ -4,6 +4,7 @@ import { Github, Instagram, Linkedin, Codepen } from "lucide-react";
 import Experiences from "./Experiences";
 import About from "./About";
 import Projects from "./Projects";
+import InteractiveScroll from "./InteractiveScroll";
 
 export default function Portfolio() {
   return (
@@ -67,9 +68,11 @@ export default function Portfolio() {
 
       {/* Right Side */}
       <div className="col-span-3 max-w-3xl mx-auto space-y-12 py-18">
-        <About />
-        <Experiences />
-        <Projects />
+        <InteractiveScroll>
+          <About />
+          <Experiences />
+          <Projects />
+        </InteractiveScroll>
       </div>
     </div>
   );
