@@ -32,11 +32,11 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, [controls, inView]);
 
   const variants: Variants = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 1.5, ease: "easeIn" },
+      transition: { duration: 1.5, ease: "easeOut" },
     },
   };
 

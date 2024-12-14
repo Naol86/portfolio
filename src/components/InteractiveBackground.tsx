@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -14,11 +13,10 @@ export default function InteractiveBackground({
   const handleMouseMove = (event: React.MouseEvent) => {
     setMousePosition({
       x: event.clientX,
-      y: event.clientY,
+      y: event.clientY + window.scrollY, // Adjust for scroll
     });
   };
 
-  // Wrap children with AnimatedDiv
   const wrappedChildren = React.Children.map(children, (child, index) => (
     <AnimatedDiv key={index}>{child}</AnimatedDiv>
   ));
@@ -32,7 +30,7 @@ export default function InteractiveBackground({
           `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 1) 50%)`,
         ],
       }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeInOut" }} // Adjusted transition
     >
       {wrappedChildren}
     </motion.div>
@@ -72,3 +70,4 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     </motion.div>
   );
 };
+  

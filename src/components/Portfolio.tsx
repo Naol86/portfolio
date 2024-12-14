@@ -5,6 +5,7 @@ import Experiences from "./Experiences";
 import About from "./About";
 import Projects from "./Projects";
 import InteractiveScroll from "./InteractiveScroll";
+import { AnimatedTestimonialsDemo } from "./AnimatedTestimonials";
 
 export default function Portfolio() {
   return (
@@ -78,6 +79,7 @@ export default function Portfolio() {
           <About />
           <Experiences />
           <Projects />
+          <AnimatedTestimonialsDemo />
         </InteractiveScroll>
       </div>
     </div>
