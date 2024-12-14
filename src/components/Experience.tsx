@@ -7,6 +7,7 @@ interface ExperienceType {
   end: string;
   role: string;
   company: string;
+  description: string;
   technologies: string[];
 }
 
@@ -34,12 +35,7 @@ export default function Experience({
             {experience.role} · {experience.company}
           </h3>
         </div>
-        <p className="mb-4 text-gray-300">
-          Build and maintain critical components used to construct
-          Klaviyo&apos;s frontend, across the whole product. Work closely with
-          cross-functional teams, including developers, designers, and product
-          managers.
-        </p>
+        <p className="mb-4 text-gray-300">{experience.description}</p>
         <div className="flex gap-2 flex-wrap">
           {experience.technologies.map((title, index) => (
             <Tag title={title} key={index} />

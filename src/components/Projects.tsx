@@ -3,12 +3,66 @@ import Title from "./Title";
 import Project from "./Project";
 
 export default function Projects() {
+  const projects = [
+    {
+      startDate: "2024-11-20",
+      endDate: "2024-12-10",
+      title: "Birra Coffee Website",
+      description:
+        "A professional front-end and integration project for Birra Coffee, developed as part of my work at Abyssinia Software Solutions. The website is designed to deliver a seamless user experience with a modern and responsive UI.",
+      technologies: ["Next.js", "Redux Query", "shadcn"],
+      image: "/images/birra-coffee.png",
+      images: ["/images/birra-coffee-1.png", "/images/birra-coffee-2.png"],
+      link: "https://birragroup.com/",
+      otherDetails:
+        "Focused on crafting an elegant UI and ensuring smooth API integrations for an exceptional user experience.",
+    },
+    {
+      startDate: "2024-11-01",
+      endDate: "2024-11-15",
+      title: "Naol AI",
+      description:
+        "A fun AI chatbot project inspired by ChatGPT, showcasing conversational AI capabilities and backend integration. Built to explore and demonstrate the implementation of AI-powered applications.",
+      technologies: ["Next.js", "Zustand", "NestJS", "PostgreSQL", "Docker"],
+      image: "/images/naol-ai.png", // Main project image placeholder
+      images: ["/images/naol-ai-1.png", "/images/naol-ai-2.png"], // Additional images
+      link: "https://csec-ai-chat-bot.vercel.app/",
+      otherDetails:
+        "A fully responsive and interactive project, combining AI with a modern tech stack.",
+    },
+    {
+      startDate: "2024-09-01",
+      endDate: "2024-09-30",
+      title: "Bank Dash",
+      description:
+        "A frontend dashboard and integration project focused on delivering a clean, responsive, and user-friendly interface for banking applications. Designed to improve user experience and accessibility.",
+      technologies: ["Next.js", "Redux", "REST API", "Tailwind CSS"],
+      image: "/images/bank-dash.png", // Main project image placeholder
+      images: ["/images/bank-dash-1.png", "/images/bank-dash-2.png"], // Additional images
+      link: "#", // Update with the actual project link
+      otherDetails:
+        "The project prioritizes usability, visual design, and seamless API integrations.",
+    },
+    {
+      startDate: "2024-08-01",
+      endDate: "2024-08-31",
+      title: "Unisource",
+      description:
+        "A platform that provides university students with essential resources such as slides, notes, and other materials to support their academic journey.",
+      technologies: ["React.js", "GoLang", "MySQL"],
+      image: "/images/unisource.png", // Main project image placeholder
+      images: ["/images/unisource-1.png", "/images/unisource-2.png"], // Additional images
+      link: "#", // Update with the actual project link
+      otherDetails:
+        "Built to address the academic needs of university students, ensuring easy access to critical learning resources.",
+    },
+  ];
   return (
     <div id="projects">
       <Title title="Projects" />
       <section className="space-y-2 divide-y-2 divide-white/20 px-2">
-        {Array.from({ length: 3 }).map((_, index) => (
-          <Project key={index} />
+        {projects.map((project, index) => (
+          <Project key={index} project={project} />
         ))}
       </section>
     </div>

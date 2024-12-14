@@ -3,7 +3,19 @@ import Tag from "./Tag";
 import Image from "next/image";
 import CustomLink from "./CustomLink";
 
-export default function Project() {
+interface ProjectType {
+  startDate: string;
+  endDate: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  images: string[];
+  link: string;
+  otherDetails?: string;
+}
+
+export default function Project({ project }: { project: ProjectType }) {
   return (
     <div className="md:flex py-4 gap-1 items-center px-4 rounded-md bg-blue-400 bg-opacity-0 backdrop-blur-md hover:bg-opacity-5 transition-all duration-300">
       <div className="md:min-w-[130px] p-1">
@@ -18,21 +30,14 @@ export default function Project() {
       </div>
       <div className="grow">
         <div className="flex justify-between items-baseline mb-4 group">
-          <h3 className="text-xl font-semibold text-white">
-            Senior Frontend Engineer · Klaviyo
-          </h3>
+          <h3 className="text-xl font-semibold text-white">{project.title}</h3>
           <div className="group-hover:scale-105 transition-transform">
-            <CustomLink link={"#"} />
+            <CustomLink link={project.link} />
           </div>
         </div>
-        <p className="mb-4 text-gray-300">
-          Build and maintain critical components used to construct
-          Klaviyo&apos;s frontend, across the whole product. Work closely with
-          cross-functional teams, including developers, designers, and product
-          managers.
-        </p>
+        <p className="mb-4 text-gray-300">{project.description}</p>
         <div className="flex gap-2 flex-wrap">
-          {["React", "Next.Js", "NestJs", "AI"].map((title, index) => (
+          {project.technologies.map((title, index) => (
             <Tag title={title} key={index} />
           ))}
         </div>
