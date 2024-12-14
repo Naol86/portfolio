@@ -58,7 +58,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div id="projects">
+    <div id="projects" className="my-5 pb-14">
       <Title title="Projects" />
       <section className="space-y-2 divide-y-2 divide-white/20 px-2">
         {projects.map((project, index) => (

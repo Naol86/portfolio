@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Github, Instagram, Linkedin, Codepen } from "lucide-react";
+import { Github, Linkedin, Send, MailPlus } from "lucide-react";
 import Experiences from "./Experiences";
 import About from "./About";
 import Projects from "./Projects";
@@ -35,32 +35,38 @@ export default function Portfolio() {
           {/* Social Links */}
           <div className="mt-12 space-x-4">
             <Link
-              href="#"
+              href="https://github.com/naol86"
               className="text-slate-400 hover:text-white transition-colors"
+              target="blank"
             >
               <Github className="inline-block w-5 h-5" />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/naol-kasinet/"
               className="text-slate-400 hover:text-white transition-colors"
+              target="blank"
             >
               <Linkedin className="inline-block w-5 h-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="#"
+              href="mailto:naolkasinet@gmail.com" // This is the correct format for a mailto link
               className="text-slate-400 hover:text-white transition-colors"
+              target="blank"
             >
-              <Codepen className="inline-block w-5 h-5" />
-              <span className="sr-only">CodePen</span>
+              <MailPlus className="inline-block w-5 h-5" /> {/* Email icon */}
+              <span className="sr-only">Email</span>{" "}
+              {/* Accessible label for screen readers */}
             </Link>
+
             <Link
-              href="#"
+              href="https://t.me/lijnaol"
+              target="blank"
               className="text-slate-400 hover:text-white transition-colors"
             >
-              <Instagram className="inline-block w-5 h-5" />
-              <span className="sr-only">Instagram</span>
+              <Send className="inline-block w-5 h-5" />{" "}
+              <span className="sr-only">Telegram</span>
             </Link>
           </div>
         </div>
