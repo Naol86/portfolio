@@ -9,7 +9,6 @@ export default function InteractiveScroll({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Wrap children with AnimatedDiv
   const wrappedChildren = React.Children.map(children, (child, index) => (
     <AnimatedDiv key={index}>{child}</AnimatedDiv>
   ));
@@ -21,12 +20,14 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.2,
+    threshold: 0.15,
   });
 
   React.useEffect(() => {
     if (inView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
   }, [controls, inView]);
 
@@ -35,7 +36,7 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 2, ease: "easeOut" },
+      transition: { duration: 1.5, ease: "easeIn" },
     },
   };
 
