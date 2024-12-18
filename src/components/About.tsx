@@ -12,7 +12,7 @@ export default function About() {
             Full Stack Web Developer | Passionate Learner | Client-Focused
             Achiever
           </h2>
-          <div className="gap-2 flex flex-col text-base font-medium">
+          <div className="gap-2 flex flex-col text-base">
             <p>
               I am a detail-oriented full stack web developer with a passion for
               creating dynamic and scalable web applications. My expertise spans

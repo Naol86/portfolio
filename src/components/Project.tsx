@@ -2,6 +2,7 @@ import React from "react";
 import Tag from "./Tag";
 import Image from "next/image";
 import CustomLink from "./CustomLink";
+import Link from "next/link";
 
 interface ProjectType {
   startDate: string;
@@ -22,15 +23,20 @@ export default function Project({ project }: { project: ProjectType }) {
         <div className="relative aspect-[10/5] md:aspect-[7/6] mx-1 py-2">
           <Image
             fill
-            src="/placeholder.jpg"
-            alt="test"
-            className="object-cover rounded-md border-2 border-white/35"
+            src={project.image}
+            alt={project.title}
+            className="object-cover rounded-[5px] border-2 border-white/35"
           />
         </div>
       </div>
       <div className="grow">
         <div className="flex justify-between items-baseline mb-4 group">
-          <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+          <Link
+            href={project.link}
+            className="hover:text-blue-400 text-white transition-all duration-300"
+          >
+            <h3 className="text-xl font-semibold">{project.title}</h3>
+          </Link>
           <div className="group-hover:scale-105 transition-transform">
             <CustomLink link={project.link} />
           </div>

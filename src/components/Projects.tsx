@@ -10,12 +10,31 @@ export default function Projects() {
       title: "Birra Coffee Website",
       description:
         "A professional front-end and integration project for Birra Coffee, developed as part of my work at Abyssinia Software Solutions. The website is designed to deliver a seamless user experience with a modern and responsive UI.",
-      technologies: ["Next.js", "Redux Query", "shadcn"],
-      image: "/images/birra-coffee.png",
+      technologies: [
+        "Next.js",
+        "Redux Query",
+        "shadcn",
+        "Rest Api",
+        "Tailwind CSS",
+      ],
+      image: "/birragroup.png",
       images: ["/images/birra-coffee-1.png", "/images/birra-coffee-2.png"],
       link: "https://birragroup.com/",
       otherDetails:
         "Focused on crafting an elegant UI and ensuring smooth API integrations for an exceptional user experience.",
+    },
+    {
+      startDate: "2024-10-01",
+      endDate: "2024-12-31",
+      title: "LML Repair",
+      description:
+        "An ERP system built to manage a repair shop in Seattle. I worked as a full-stack developer on this project, focusing on both the front-end and back-end development to streamline operations and enhance customer service.",
+      technologies: ["Next.js", "Prisma", "SEO", "Mysql", "Shadcn"],
+      image: "/lmlrepair.png",
+      images: ["/images/lml-repair-1.png", "/images/lml-repair-2.png"],
+      link: "https://lmlrepair.com/",
+      otherDetails:
+        "Developed a comprehensive ERP solution to manage inventory, customer relations, and workflow automation for a repair shop.",
     },
     {
       startDate: "2024-11-01",
@@ -24,9 +43,9 @@ export default function Projects() {
       description:
         "A fun AI chatbot project inspired by ChatGPT, showcasing conversational AI capabilities and backend integration. Built to explore and demonstrate the implementation of AI-powered applications.",
       technologies: ["Next.js", "Zustand", "NestJS", "PostgreSQL", "Docker"],
-      image: "/images/naol-ai.png", // Main project image placeholder
-      images: ["/images/naol-ai-1.png", "/images/naol-ai-2.png"], // Additional images
-      link: "https://csec-ai-chat-bot.vercel.app/",
+      image: "/naolai.png",
+      images: ["/images/naol-ai-1.png", "/images/naol-ai-2.png"],
+      link: "https://ai.naol.me",
       otherDetails:
         "A fully responsive and interactive project, combining AI with a modern tech stack.",
     },
@@ -37,24 +56,11 @@ export default function Projects() {
       description:
         "A frontend dashboard and integration project focused on delivering a clean, responsive, and user-friendly interface for banking applications. Designed to improve user experience and accessibility.",
       technologies: ["Next.js", "Redux", "REST API", "Tailwind CSS"],
-      image: "/images/bank-dash.png", // Main project image placeholder
-      images: ["/images/bank-dash-1.png", "/images/bank-dash-2.png"], // Additional images
-      link: "#", // Update with the actual project link
+      image: "/bankdash.png",
+      images: ["/images/bank-dash-1.png", "/images/bank-dash-2.png"],
+      link: "https://astu-web-g1.netlify.app/",
       otherDetails:
         "The project prioritizes usability, visual design, and seamless API integrations.",
-    },
-    {
-      startDate: "2024-08-01",
-      endDate: "2024-08-31",
-      title: "Unisource",
-      description:
-        "A platform that provides university students with essential resources such as slides, notes, and other materials to support their academic journey.",
-      technologies: ["React.js", "GoLang", "MySQL"],
-      image: "/images/unisource.png", // Main project image placeholder
-      images: ["/images/unisource-1.png", "/images/unisource-2.png"], // Additional images
-      link: "#", // Update with the actual project link
-      otherDetails:
-        "Built to address the academic needs of university students, ensuring easy access to critical learning resources.",
     },
   ];
   return (
