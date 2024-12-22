@@ -35,11 +35,6 @@ export default function About() {
               to bring my clients&apos; visions to life efficiently and
               effectively.
             </p>
-            <p>
-              Whether building innovative features or optimizing existing
-              systems, I am dedicated to delivering quality solutions that drive
-              success for the people and businesses I work with.
-            </p>
           </div>
         </div>
       </section>
