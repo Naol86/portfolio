@@ -48,7 +48,7 @@ const achievements: achievement[] = [
 export default function Achievements() {
   return (
     <div id="achievements pb-10">
-      <Title title="Achievements" />
+      <Title title="Achievements 🏆" />
       <section className="grid sm:grid-cols-2 divide-white/20 px-4 sm:px-5 gap-4">
         {achievements.map((achievement, index) => (
           <Achievement key={index} achievement={achievement} />

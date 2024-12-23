@@ -48,7 +48,7 @@ const experiences = [
 export default function Experiences() {
   return (
     <div id="experiences">
-      <Title title="Experiences" />
+      <Title title="Experiences 👨🏽‍💻" />
       <section className="space-y-2 divide-y-2 divide-white/20 px-2">
         {experiences.map((experience, index) => (
           <Experience key={index} experience={experience} />
