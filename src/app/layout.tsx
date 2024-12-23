@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     url: "https://naol.me", // Replace with your portfolio's URL
     title: "Naol Kainset - Full Stack Developer",
     description:
-      "Explore the portfolio of Naol Kainset, a Full Stack Developer proficient in React, Next.js, Laravel, and PHP.",
+      "Explore the portfolio of Naol Kainset, a Full Stack Developer proficient in Express.js, Nest.js, React, Next.js, Laravel and other more.",
     images: [
       {
-        url: "https://naol.me/og-image.jpg", // Replace with your image URL
+        url: "https://naol.me/opengraph-image.png", // Replace with your image URL
         width: 1200,
         height: 630,
         alt: "Naol Kainset Portfolio",
