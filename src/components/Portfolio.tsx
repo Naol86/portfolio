@@ -6,6 +6,7 @@ import About from "./About";
 import Projects from "./Projects";
 import InteractiveScroll from "./InteractiveScroll";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonials";
+import Achievements from "./Achievements";
 
 export default function Portfolio() {
   return (
@@ -79,6 +80,7 @@ export default function Portfolio() {
           <About />
           <Experiences />
           <Projects />
+          <Achievements />
           <AnimatedTestimonialsDemo />
         </InteractiveScroll>
       </div>

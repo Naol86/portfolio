@@ -18,30 +18,92 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Naol Kainset",
-  description: "Full Stack Developer Portfolio | Naol Kainset",
-  keywords:
-    "Full Stack Developer, React, Next.js, Laravel, PHP, JavaScript, Web Development, Portfolio, Naol Kainset",
+  title: "Naol Kainset - Full Stack Developer | Portfolio",
+  description:
+    "Welcome to the portfolio of Naol Kainset, an experienced Full Stack Developer with expertise in React, Next.js, Laravel, PHP, Nest.js, Express.js, and more. Explore projects, achievements, and professional experience.",
+  keywords: [
+    "Naol Kainset",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Best Ethiopian Software Engineer",
+    "Top Ethiopian Developer",
+    "Ethiopian Software Developer",
+    "React",
+    "Next.js",
+    "Laravel",
+    "PHP",
+    "JavaScript",
+    "Web Development",
+    "Portfolio",
+    "Nest.js",
+    "Express.js",
+    "Redux",
+    "Prisma",
+    "PostgreSQL",
+    "MongoDB",
+    "TypeScript",
+    "REST APIs",
+    "GraphQL",
+    "SEO",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Software Developer",
+    "Developer Portfolio",
+    "Innovative Software Solutions",
+    "Software Development Expert",
+    "Ethiopian Tech Leader",
+    "Cutting-Edge Web Development",
+    "Professional Software Engineer",
+  ],
   viewport: "width=device-width, initial-scale=1",
+  themeColor: "#000000", // Customize with your theme color
 
   // Open Graph meta tags for social media sharing
   openGraph: {
     type: "website",
     url: "https://naol.me", // Replace with your portfolio's URL
-    title: "Naol Kainset - Full Stack Developer",
+    title: "Naol Kainset - Full Stack Developer | Portfolio",
     description:
-      "Explore the portfolio of Naol Kainset, a Full Stack Developer proficient in Express.js, Nest.js, React, Next.js, Laravel and other more.",
+      "Explore the professional portfolio of Naol Kainset, a Full Stack Developer specializing in modern web technologies like React, Next.js, Laravel, and Nest.js. Discover projects, skills, and achievements.",
     images: [
       {
         url: "https://naol.me/opengraph-image.png", // Replace with your image URL
         width: 1200,
         height: 630,
-        alt: "Naol Kainset Portfolio",
+        alt: "Naol Kainset Portfolio Open Graph Image",
+      },
+      {
+        url: "https://naol.me/profile-picture.png", // Replace with your profile picture URL
+        width: 800,
+        height: 800,
+        alt: "Naol Kainset Profile Picture",
       },
     ],
+    siteName: "Naol Kainset Portfolio",
+    locale: "en_US", // Adjust for your preferred locale
   },
 
-  themeColor: "#000000", // Replace with your theme color
+  // Twitter meta tags for better sharing on Twitter
+  twitter: {
+    card: "summary_large_image",
+    site: "@naol8600", // Replace with your Twitter handle
+    creator: "@naol8600", // Replace with your Twitter handle
+    title: "Naol Kainset - Full Stack Developer",
+    description:
+      "Check out Naol Kainset's portfolio, showcasing expertise in Full Stack Development with technologies like React, Next.js, Laravel, and Nest.js.",
+    images: ["https://naol.me/twitter-card-image.png"], // Replace with your Twitter image URL
+  },
+
+  // Additional metadata for enhanced SEO
+  robots: "index, follow",
+  authors: [{ name: "Naol Kainset" }],
+  alternates: {
+    canonical: "https://naol.me", // Main URL
+    languages: {
+      "en-US": "https://naol.me/", // English version
+    },
+  },
+  manifest: "/manifest.json", // Replace with your manifest file location
 };
 
 export default function RootLayout({
