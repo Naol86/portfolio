@@ -41,7 +41,15 @@ const projects = [
     title: "Naol AI",
     description:
       "A fun AI chatbot project inspired by ChatGPT, showcasing conversational AI capabilities and backend integration. Built to explore and demonstrate the implementation of AI-powered applications.",
-    technologies: ["Next.js", "Zustand", "NestJS", "PostgreSQL", "Docker"],
+    technologies: [
+      "Next.js",
+      "Zustand",
+      "NestJS",
+      "PostgreSQL",
+      "Docker",
+      "Python",
+      "Automation",
+    ],
     image: "/naolai.png",
     images: ["/images/naol-ai-1.png", "/images/naol-ai-2.png"],
     link: "https://ai.naol.me",
@@ -54,7 +62,7 @@ const projects = [
     title: "Bank Dash",
     description:
       "A frontend dashboard and integration project focused on delivering a clean, responsive, and user-friendly interface for banking applications. Designed to improve user experience and accessibility.",
-    technologies: ["Next.js", "Redux", "REST API", "Tailwind CSS"],
+    technologies: ["Next.js", "Redux", "REST API", "Tailwind CSS", "Python"],
     image: "/bankdash.png",
     images: ["/images/bank-dash-1.png", "/images/bank-dash-2.png"],
     link: "https://astu-web-g1.netlify.app/",

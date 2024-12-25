@@ -16,7 +16,10 @@ export interface BlogType {
 
 export default async function BlogSection() {
   const res = await fetch(`${process.env.NEXT_URL}/api/blogs`);
-  const { data } = await res.json();
+  if (!res.ok) {
+    return <div>naol - {process.env.NEXT_URL}</div>;
+  }
+  const {data} = await res.json();
   const blogPosts: BlogType[] = data;
   return (
     <section className="py-16 px-4 ">
