@@ -5,8 +5,10 @@ import Experiences from "./Experiences";
 import About from "./About";
 import Projects from "./Projects";
 import InteractiveScroll from "./InteractiveScroll";
-import { AnimatedTestimonialsDemo } from "./AnimatedTestimonials";
+// import { AnimatedTestimonialsDemo } from "./AnimatedTestimonials";
 import Achievements from "./Achievements";
+import { links } from "./FootBar";
+import Contact from "./Contact";
 
 export default function Portfolio() {
   return (
@@ -23,13 +25,14 @@ export default function Portfolio() {
           </div>
 
           <nav className="mt-12 space-y-4">
-            {["about", "experiences", "projects"].map((item) => (
+            {links.map((link, index) => (
               <Link
-                key={item}
-                href={`#${item}`}
-                className={`block text-sm tracking-wider text-slate-400 hover:text-white transition-colors`}
+                key={index}
+                href={link.href}
+                className={`text-sm tracking-wider text-slate-400 hover:text-white transition-colors flex items-center`}
               >
-                {item.toUpperCase()}
+                {<link.icon size={22} className="text-teal-300 mr-1.5" />}
+                {link.title.toUpperCase()}
               </Link>
             ))}
           </nav>
@@ -81,7 +84,13 @@ export default function Portfolio() {
           <Experiences />
           <Projects />
           <Achievements />
-          <AnimatedTestimonialsDemo />
+          {/* <AnimatedTestimonialsDemo /> */}
+          <Contact />
+          <div className="w-full h-14 flex items-center text-base justify-center">
+            © <span className="text-teal-400 mx-1.5"> Naol Kainset</span> 2024.
+            All Rights Reserved.
+          </div>
+          <div className="h-24"></div>
         </InteractiveScroll>
       </div>
     </div>

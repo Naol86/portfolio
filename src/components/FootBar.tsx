@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import React from "react";
 
-const links = [
+export const links = [
   {
     title: "About",
     icon: UserRound,
@@ -38,8 +38,8 @@ const links = [
 
 export default function FootBar() {
   return (
-    <div className="fixed sm:hidden flex items-center bottom-0 w-full h-14 bg-blue-200 bg-opacity-30 backdrop-blur-md rounded-t-[10px]">
-      <div className="flex justify-between items-center px-5 w-full h-full">
+    <div className="fixed sm:hidden flex items-center bottom-0 w-full h-14 bg-[#0d1527] bg-opacity-50 backdrop-blur-md rounded-t-[10px]">
+      <div className="flex justify-between items-center px-10 w-full h-full">
         {links.map((link, index) => (
           <Link
             key={index}
@@ -47,7 +47,7 @@ export default function FootBar() {
             className={`block text-sm tracking-wider text-slate-400 hover:text-white transition-colors`}
           >
             {/* {link.title.toUpperCase()} */}
-            {<link.icon size={32} className="text-[#0D121E]" />}
+            {<link.icon size={24} className="text-teal-300" />}
           </Link>
         ))}
       </div>

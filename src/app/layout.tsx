@@ -5,6 +5,7 @@ import "./globals.css";
 import InteractiveBackground from "@/components/InteractiveBackground";
 import Script from "next/script";
 import FootBar from "@/components/FootBar";
+import { Toaster } from "@/components/ui/toaster";
 // import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = localFont({
@@ -137,6 +138,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         <InteractiveBackground>{children}</InteractiveBackground>
         <FootBar />
+        <Toaster />
       </body>
     </html>
   );
