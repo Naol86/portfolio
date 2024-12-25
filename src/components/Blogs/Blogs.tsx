@@ -15,7 +15,7 @@ export interface BlogType {
 }
 
 export default async function BlogSection() {
-  const res = await fetch("http://localhost:3000/api/blogs");
+  const res = await fetch(`${process.env.NEXT_URL}/api/blogs`);
   const { data } = await res.json();
   const blogPosts: BlogType[] = data;
   return (
