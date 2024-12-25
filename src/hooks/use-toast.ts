@@ -23,7 +23,6 @@ const actionTypes = {
 } as const;
 
 console.log(actionTypes);
-
 let count = 0;
 
 function genId() {
