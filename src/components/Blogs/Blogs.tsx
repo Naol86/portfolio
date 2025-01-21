@@ -1,4 +1,4 @@
-import Blog from "./Blog";
+// import Blog from "./Blog";
 
 export interface BlogType {
   id: string;
@@ -15,15 +15,15 @@ export interface BlogType {
 }
 
 export default async function BlogSection() {
-  const res = await fetch(`${process.env.NEXT_URL}/api/blogs`);
-  if (!res.ok) {
-    return <div>naol - {process.env.NEXT_URL}</div>;
-  }
-  const {data} = await res.json();
-  const blogPosts: BlogType[] = data;
+  // const res = await fetch(`${process.env.NEXT_URL}/api/blogs`);
+  // if (!res.ok) {
+  //   return <div>naol - {process.env.NEXT_URL}</div>;
+  // }
+  // const {data} = await res.json();
+  // const blogPosts: BlogType[] = data;
   return (
     <section className="py-16 px-4 ">
-      <div className="max-w-7xl mx-auto">
+      {/* <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold mb-2 text-teal-400">
             Welcome to My Blog
@@ -39,7 +39,8 @@ export default async function BlogSection() {
             <Blog key={post.id} post={post} />
           ))}
         </div>
-      </div>
+      </div> */}
+      comming soon
     </section>
   );
 }
