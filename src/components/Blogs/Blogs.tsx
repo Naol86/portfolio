@@ -40,7 +40,7 @@ export default async function BlogSection() {
           ))}
         </div>
       </div> */}
-      comming soon
+      coming soon
     </section>
   );
 }

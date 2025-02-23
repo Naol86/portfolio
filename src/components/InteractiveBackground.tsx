@@ -51,7 +51,7 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, [controls, inView]);
 
   const variants: Variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
@@ -70,4 +70,3 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     </motion.div>
   );
 };
-  
