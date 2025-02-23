@@ -17,7 +17,8 @@ export default function Portfolio() {
         <div className="p-8 md:fixed  max-w-md h-screen flex flex-col justify-center">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold text-white">Naol Kasinet</h1>
-            <h2 className="text-xl">Full Stack Web Developer</h2>
+            <h2 className="text-sm font-semibold">Software Engineer</h2>
+            <h3 className="text-xl">Full Stack Web Developer</h3>
             <p className="text-slate-400">
               Building dynamic, scalable, and user-friendly web solutions with
               modern technologies.

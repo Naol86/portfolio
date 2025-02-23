@@ -63,19 +63,19 @@ export const metadata: Metadata = {
   // Open Graph meta tags for social media sharing
   openGraph: {
     type: "website",
-    url: "https://naol.me", // Replace with your portfolio's URL
+    url: "https://naolkasinet.com", // Replace with your portfolio's URL
     title: "Naol Kainset - Full Stack Developer | Portfolio",
     description:
       "Explore the professional portfolio of Naol Kainset, a Full Stack Developer specializing in modern web technologies like React, Next.js, Laravel, and Nest.js. Discover projects, skills, and achievements.",
     images: [
       {
-        url: "https://naol.me/opengraph-image.png", // Replace with your image URL
+        url: "https://naolkasinet.com/opengraph-image.png", // Replace with your image URL
         width: 1200,
         height: 630,
         alt: "Naol Kainset Portfolio Open Graph Image",
       },
       {
-        url: "https://naol.me/profile-picture.png", // Replace with your profile picture URL
+        url: "https://naolkasinet.com/profile-picture.png", // Replace with your profile picture URL
         width: 800,
         height: 800,
         alt: "Naol Kainset Profile Picture",
@@ -93,16 +93,16 @@ export const metadata: Metadata = {
     title: "Naol Kainset - Full Stack Developer",
     description:
       "Check out Naol Kainset's portfolio, showcasing expertise in Full Stack Development with technologies like React, Next.js, Laravel, and Nest.js.",
-    images: ["https://naol.me/twitter-card-image.png"], // Replace with your Twitter image URL
+    images: ["https://naolkasinet.com/twitter-card-image.png"], // Replace with your Twitter image URL
   },
 
   // Additional metadata for enhanced SEO
   robots: "index, follow",
   authors: [{ name: "Naol Kainset" }],
   alternates: {
-    canonical: "https://naol.me", // Main URL
+    canonical: "https://naolkasinet.com", // Main URL
     languages: {
-      "en-US": "https://naol.me/", // English version
+      "en-US": "https://naolkasinet.com/", // English version
     },
   },
   manifest: "/manifest.json", // Replace with your manifest file location
