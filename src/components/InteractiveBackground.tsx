@@ -23,7 +23,7 @@ export default function InteractiveBackground({
 
   return (
     <motion.div
-      className="min-h-screen bg-slate-900"
+      className="min-h-screen "
       onMouseMove={handleMouseMove}
       animate={{
         background: [
