@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { motion, useAnimation, Variants } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function InteractiveBackground({
@@ -30,7 +30,7 @@ export default function InteractiveBackground({
           `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 1) 50%)`,
         ],
       }}
-      transition={{ duration: 0.3, ease: "easeInOut" }} // Adjusted transition
+      transition={{ duration: 0.2, ease: "easeInOut" }} // Adjusted transition
     >
       {wrappedChildren}
     </motion.div>
@@ -50,21 +50,21 @@ const AnimatedDiv: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     }
   }, [controls, inView]);
 
-  const variants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: "easeOut" },
-    },
-  };
+  // const variants: Variants = {
+  //   hidden: { opacity: 0, y: 100 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { duration: 1, ease: "easeOut" },
+  //   },
+  // };
 
   return (
     <motion.div
       ref={ref}
       initial="hidden"
       animate={controls}
-      variants={variants}
+      // variants={variants}
     >
       {children}
     </motion.div>
