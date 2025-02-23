@@ -3,20 +3,20 @@ import Experience from "./Experience";
 import Title from "./Title";
 
 const experiences = [
-  // {
-  //   start: "Jan 2025",
-  //   end: "present",
-  //   role: "Head of Education @A2SV",
-  //   company: "African to Silicon Valley",
-  //   technologies: [
-  //     "Data Structures",
-  //     "Algorithms",
-  //     "Teaching",
-  //     "Student Engagement",
-  //   ],
-  //   description:
-  //     "As the Head of Education, I am responsible for teaching students about data structures and algorithms, managing my class, and maintaining effective communication with students. My role involves delivering lectures, guiding students in their learning journeys, and handling other educational responsibilities to foster a productive and inclusive environment.",
-  // },
+  {
+    start: "Jan 2025",
+    end: "present",
+    role: "Head of Education @A2SV",
+    company: "African to Silicon Valley",
+    technologies: [
+      "Data Structures",
+      "Algorithms",
+      "Teaching",
+      "Student Engagement",
+    ],
+    description:
+      "As the Head of Education, I am responsible for teaching students about data structures and algorithms, managing my class, and maintaining effective communication with students. My role involves delivering lectures, guiding students in their learning journeys, and handling other educational responsibilities to foster a productive and inclusive environment.",
+  },
   {
     start: "Nov 2024",
     end: "Jan 2025",

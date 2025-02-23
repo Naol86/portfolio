@@ -4,22 +4,43 @@ import Project from "./Project";
 
 const projects = [
   {
-    "startDate": "2024-11-20",
-    "endDate": "2024-12-10",
-    "title": "Abyssinia Software Solution Portfolio",
-    "description": "A portfolio showcasing a sleek user interface and smooth API integrations, built with modern technologies for an exceptional user experience.",
-    "technologies": [
+    startDate: "2025-01-26",
+    endDate: "2024-12-10",
+    title: "Top Games Betting site",
+    description:
+      "A Casino betting site with a sleek user interface and smooth API integrations, built with modern technologies for an exceptional user experience.",
+    technologies: [
+      "React.js",
+      "Express js",
+      "shadcn",
+      "Rest Api",
+      "Tailwind CSS",
+    ],
+    image: "/topgames.png",
+    images: ["/topgames.png", "/topgames2.png"],
+    link: "#",
+    otherDetails:
+      "Game betting site with a sleek user interface and smooth API integrations.",
+  },
+  {
+    startDate: "2024-11-20",
+    endDate: "2024-12-10",
+    title: "Abyssinia Software Solution Portfolio",
+    description:
+      "A portfolio showcasing a sleek user interface and smooth API integrations, built with modern technologies for an exceptional user experience.",
+    technologies: [
       "Next.js",
       "Express js",
       "shadcn",
       "Rest Api",
-      "Tailwind CSS"
+      "Tailwind CSS",
     ],
-    "image": "/abyssinia.png",
-    "images": ["/images/abyssinia-1.png", "/images/abyssinia-2.png"],
-    "link": "https://abyssiniasoftware.com/",
-    "otherDetails": "Focused on crafting an elegant UI and ensuring smooth API integrations for an exceptional user experience."
-  },  
+    image: "/abyssinia.png",
+    images: ["/images/abyssinia-1.png", "/images/abyssinia-2.png"],
+    link: "https://abyssiniasoftware.com/",
+    otherDetails:
+      "Focused on crafting an elegant UI and ensuring smooth API integrations for an exceptional user experience.",
+  },
   {
     startDate: "2024-11-20",
     endDate: "2024-12-10",

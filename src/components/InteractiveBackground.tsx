@@ -27,7 +27,7 @@ export default function InteractiveBackground({
       onMouseMove={handleMouseMove}
       animate={{
         background: [
-          `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 1) 50%)`,
+          `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 1) 50%)`,
         ],
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }} // Adjusted transition
