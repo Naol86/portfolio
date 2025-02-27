@@ -20,9 +20,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Naol Kainset - Full Stack Developer | Portfolio",
+  title: "Naol Kainset - Full Stack Developer",
   description:
-    "Welcome to the portfolio of Naol Kainset, an experienced Full Stack Developer with expertise in React, Next.js, Laravel, PHP, Nest.js, Express.js, and more. Explore projects, achievements, and professional experience.",
+    "Welcome to the portfolio of Naol Kainset, a skilled Full Stack Developer specializing in web and mobile development. With expertise in React, Next.js, Laravel, PHP, Nest.js, Express.js, and Flutter, I build dynamic, scalable, and user-friendly solutions. Explore my projects, achievements, and professional experience.",
   keywords: [
     "Naol Kainset",
     "Full Stack Developer",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://naolkasinet.com", // Replace with your portfolio's URL
-    title: "Naol Kainset - Full Stack Developer | Portfolio",
+    title: "Naol Kainset - Full Stack Developer",
     description:
       "Explore the professional portfolio of Naol Kainset, a Full Stack Developer specializing in modern web technologies like React, Next.js, Laravel, and Nest.js. Discover projects, skills, and achievements.",
     images: [

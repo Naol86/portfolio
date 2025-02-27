@@ -20,10 +20,10 @@ export default function Portfolio() {
               <h1 className="text-4xl font-bold text-white">Naol Kasinet</h1>
               <h2 className="text-sm font-medium">Software Engineer</h2>
             </div>
-            <h3 className="text-xl">Full Stack Web Developer</h3>
+            <h3 className="text-xl">Full Stack</h3>
             <p className="text-slate-400">
-              Building dynamic, scalable, and user-friendly web solutions with
-              modern technologies.
+              Building dynamic, scalable, and user-friendly web and mobile
+              solutions using modern technologies.
             </p>
           </div>
 
