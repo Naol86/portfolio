@@ -18,7 +18,7 @@ const projects = [
     ],
     image: "/topgames.png",
     images: ["/topgames.png", "/topgames2.png"],
-    link: "#",
+    link: "https://topgames.bet",
     otherDetails:
       "Game betting site with a sleek user interface and smooth API integrations.",
   },
