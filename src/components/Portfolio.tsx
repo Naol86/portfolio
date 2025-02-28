@@ -51,7 +51,7 @@ export default function Portfolio() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/naol-kasinet/"
+              href="https://www.linkedin.com/in/naolkasinet/"
               className="text-slate-400 hover:text-white transition-colors"
               target="blank"
             >
